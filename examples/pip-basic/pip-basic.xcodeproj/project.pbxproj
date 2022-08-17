@@ -41,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		434E7E9E28AD379500FB4FB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4398EF6228A6B30F00644D40 /* Assets.xcassets */,
+				4398EF6428A6B30F00644D40 /* LaunchScreen.storyboard */,
+				4398EF5F28A6B30D00644D40 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4398EF4D28A6B30D00644D40 = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +70,10 @@
 		4398EF5828A6B30D00644D40 /* pip-basic */ = {
 			isa = PBXGroup;
 			children = (
+				434E7E9E28AD379500FB4FB4 /* Resources */,
 				4398EF7128A6B7EB00644D40 /* videos */,
 				4398EF5928A6B30D00644D40 /* AppDelegate.swift */,
-				4398EF6228A6B30F00644D40 /* Assets.xcassets */,
 				4398EF6728A6B30F00644D40 /* Info.plist */,
-				4398EF6428A6B30F00644D40 /* LaunchScreen.storyboard */,
-				4398EF5F28A6B30D00644D40 /* Main.storyboard */,
 				4398EF7428A6B84200644D40 /* SampleVideoPlayerView.swift */,
 				4398EF5B28A6B30D00644D40 /* SceneDelegate.swift */,
 				4398EF5D28A6B30D00644D40 /* ViewController.swift */,
