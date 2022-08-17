@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pip_basic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="NU0-mB-Jnj" userLabel="Container">
+                                <rect key="frame" x="0.0" y="215.5" width="414" height="475"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiX-OE-Enb" customClass="SampleVideoPlayerView" customModule="pip_basic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jiX-OE-Enb" secondAttribute="height" multiplier="1:1" id="brF-do-kXJ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="fmE-VF-zQd" userLabel="Controls">
+                                        <rect key="frame" x="143" y="446" width="128" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-Ak-ZPh">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="-6" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Start"/>
+                                                <connections>
+                                                    <action selector="didTapStartButton:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="oxE-pf-GLu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBd-nK-o6U">
+                                                <rect key="frame" x="95" y="0.0" width="33" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="-6" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Stop"/>
+                                                <connections>
+                                                    <action selector="didTapStopButton:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="gkA-Ep-ET5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jiX-OE-Enb" secondAttribute="trailing" id="AJb-kr-f7J"/>
+                                    <constraint firstItem="jiX-OE-Enb" firstAttribute="leading" secondItem="NU0-mB-Jnj" secondAttribute="leading" id="n9E-oc-OvW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NU0-mB-Jnj" secondAttribute="trailing" id="ccx-SS-QR4"/>
+                            <constraint firstItem="NU0-mB-Jnj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dIp-fP-ZGO"/>
+                            <constraint firstItem="NU0-mB-Jnj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uWH-AN-zeI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sampleVideoPlayerView" destination="jiX-OE-Enb" id="IV5-pm-vAR"/>
+                        <outlet property="startButton" destination="Awg-Ak-ZPh" id="G8A-ll-ow5"/>
+                        <outlet property="stopButton" destination="sBd-nK-o6U" id="Knb-xT-tbQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

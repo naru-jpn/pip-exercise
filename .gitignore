@@ -89,5 +89,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-# Mac
+# Mac,Xcode
+contents.xcworkspacedata
 .DS_Store
