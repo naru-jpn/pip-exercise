@@ -8,14 +8,14 @@ Some examples for iOS Picture-in-Picture.
 
 ## Examples
 
-- [pip-basic](https://github.com/naru-jpn/pip-exercise/examples/pip-basic)
+- [pip-basic](https://github.com/naru-jpn/pip-exercise/tree/main/examples/pip-basic)
    - `AVPlayerLayer` を使ったシンプルな PiP の実装
-- [pip-custom](https://github.com/naru-jpn/pip-exercise/examples/pip-custom)
+- [pip-custom](https://github.com/naru-jpn/pip-exercise/tree/main/examples/pip-custom)
    - `AVSampleBufferDisplayLayer` を使った pip-basic よりも自由度の高い PiP の実装
-- [pip-camera](https://github.com/naru-jpn/pip-exercise/examples/pip-camera)
+- [pip-camera](https://github.com/naru-jpn/pip-exercise/tree/main/examples/pip-camera)
    - `AVSampleBufferDisplayLayer` を使ったカメラからの入力を使用した PiP の実装
    - _カメラからの入力はアプリがバックグラウンド状態の期間は停止します_
-- [pip-performance](https://github.com/naru-jpn/pip-exercise/examples/pip-performance)
+- [pip-performance](https://github.com/naru-jpn/pip-exercise/tree/main/examples/pip-performance)
    - `CMSampleBuffer` を使ったレンダリングに関係する処理のパフォーマンス計測
 
 ## Links
